@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body> 
+     
+    <div class="crud">
+    <div class="head">
+         <h3>PRODUCT MANAGEMENT SYSTEM</h3>
+    </div>
+    <div class="inputs">
+        <input type="text" placeholder="title" id="title">
+        <div class="price">
+            <input type="number" onkeyup="getTotal()" placeholder="price" id="price" id="price">
+            <input type="number"  onkeyup="getTotal()" id="taxes" placeholder="taxes">
+            <input type="number"  onkeyup="getTotal()" id="ads" placeholder="ads">
+            <input type="number"  onkeyup="getTotal()" id="discount" placeholder="disCount">
+            <small id="total">2121</small>
+        </div>
+        <input type="number"  id="count" placeholder="count">
+        <input type="text"  id="category" placeholder="category">
+        <button id="submit" >Create</button>
+       <input type="text" id="" > 
+    </div>
+ <div class="output">
+    <div class="btnSearch">
+            <button id="searchTitle">
+             Search By Title
+            </button>
+            <button id="searchCategory">
+                Search By Category
+            </button>
+        </div>
+        <table>
+            <tr>
+                <th>id</th>
+                <th>title</th>
+                <th>price</th>
+                <th>taxes</th>
+                <th>ads</th>
+                <th>discount</th>
+                <th>total</th>
+
+                <th>category</th>
+                <td>update </td>
+                <td>delete </td>
+                
+            </tr>
+            <tbody>
+              <tr>
+                <td>2</td>
+                <td>reda</td>
+                <td>2302</td>
+                <td>2302</td>
+                <td>2302</td>
+                <td>2302</td>
+                <td>2302</td>
+                <td> </td>
+                <th><button id="update">update</button></th>
+                <th><button id="delete">delete</button></th>
+
+              </tr>
+            </tbody>
+        </table>
+    </div>
+
+     </div>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
